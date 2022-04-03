@@ -14,20 +14,20 @@ public class C07_HaftaninGunleriIfElseIf {
         // pazar veya cumartesi ise ===> hafta sonu
         // pazartesi veya sali veya carsamba veya persembe veya cuma ise ==> hafta ici
 
-        Scanner scan= new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         System.out.println("Lutfen gun ismini yaziniz");
-        String gunIsmi= scan.next().toLowerCase();
+        String gunIsmi = scan.next().toLowerCase();
 
         // hatali girisleri de yazdirmak icin
         // olasiliklari 3'e cikardim
         // hafta sonu - hafta ici - yanlis giris
 
-        if(gunIsmi.equals("pazar") || gunIsmi.equals("cumartesi")){
+        if (gunIsmi.equals("pazar") || gunIsmi.equals("cumartesi")) {
             System.out.println("girdiginiz gun hafta sonu");
 
         } else if (gunIsmi.equals("pazartesi") || gunIsmi.equals("sali") ||
-                gunIsmi.equals("carsamba")||gunIsmi.equals("persembe") ||
-                gunIsmi.equals("cuma")){
+                gunIsmi.equals("carsamba") || gunIsmi.equals("persembe") ||
+                gunIsmi.equals("cuma")) {
             System.out.println("girdiginiz gun hafta ici");
 
         } else {
