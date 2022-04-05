@@ -9,6 +9,7 @@ public class Isci extends Personel{
         objPersonel.isim="Eren";
         objPersonel.soyisim="Terzioglu";
         objPersonel.adres ="Amsterdam";
+        //biz burarya kadar bir isci olustrumadik sadece bir personel olusturduk
 
         Isci objIsci=new Isci();//Parent class ta isci ile ilgili bir veri yok
         objIsci.isim="Huseyin";
