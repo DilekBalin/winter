@@ -2,14 +2,14 @@ package day36_Inheritance;
 
 public class Personel {
 
-    //en ustteki class oldugu icin herkes icinvarolan datalari burada olusturabiliriz
-    //kisisel bilgiler
+    //en ustteki class oldugu icin herkes icin varolan datalari burada olusturabiliriz
+    //kisisel bilgiler burada olur
 
 
     protected int persNo;
     protected String isim;
     protected String soyisim;
-    protected String adres;
-    protected String tel;
+    protected String adres="Adres girilmedi";
+    protected String tel="Tel girilmedi";
 
 }
