@@ -1,4 +1,4 @@
-package day36_Inheritance;
+package day36_inheritance;
 
 public class Muhasebe extends Personel {    //muhasebe child personel ise parent class
 

@@ -1,4 +1,4 @@
-package day36_Inheritance;
+package day36_inheritance;
 
 public class SurekliIsciler extends Isci {
 

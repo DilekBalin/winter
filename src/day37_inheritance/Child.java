@@ -1,8 +1,8 @@
 package day37_inheritance;
 
-import day36_Inheritance.Parent;
+import day36_inheritance.Parent;
 
-public class Child extends Parent {
+public class Child extends Parent  {
     //bir class'i child class yaptigimizda
     //parent class'taki constructor'a ulasmasi gerekir
     //bu durumda parent class'taki constructor'in
@@ -27,7 +27,7 @@ public class Child extends Parent {
         // baska bir constructor'u calistirmak isterseniz
         //bunu Child class'taki constructor'un ilk satirina yazmalisniz
         super(sayi1,sayi2);
-        System.out.println("Iki parametreli constructor");
+        System.out.println("Child iki parametreli constructor");
     }
     public static void main(String[] args) {
 

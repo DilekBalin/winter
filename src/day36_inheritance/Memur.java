@@ -1,4 +1,4 @@
-package day36_Inheritance;
+package day36_inheritance;
 
 public class Memur extends Muhasebe{  //muhasebeyi parent yaptik ama biliyoruz ki
     //personel class'inin da tum ozelliklerini kullanabiliriz cunku
