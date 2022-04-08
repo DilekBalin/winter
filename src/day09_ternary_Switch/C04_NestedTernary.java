@@ -7,19 +7,24 @@ public class C04_NestedTernary {
         // 0 veya pozitif sayi ise tek veya cift
         // negatif sayi ise -100'den buyuk veya kucuk
         // oldugunu belirleyen bir ternary yaziniz
-        int sayi=11;
-        if (sayi>=0){
-            if (sayi%2==0){
+        int sayi = 24;
+        if (sayi >= 0) {
+            if (sayi % 2 == 0) {
                 System.out.println("sayi pozif cift sayi");
-            }else {
+            } else {
                 System.out.println("Sayi pozitif tek sayi");
             }
         } else {
-            if (sayi<= -100){
+            if (sayi <= -100) {
                 System.out.println("Sayi -100 den kucuk negatif sayi");
-            }else {
+            } else {
                 System.out.println("Sayi -100'den buyuk negatif sayi");
             }
+
+            String result = sayi >= 0 ? sayi % 2 == 0 ? "sayi pozitif cift sayi" : "sayi pozitif tek sayi" : sayi <= -100
+                    ? "Sayi-100;den kucuk negatif" : "Sayi -100'den buyuk negatif sayi";
+            System.out.println(result);
+
         }
-}
-}
+
+    }}
