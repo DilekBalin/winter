@@ -26,13 +26,15 @@ public class project {
          linearIn([1, 2, 4, 4, 6], [2, 4]) → true
 
      */
+
+
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
-        System.out.println("bir string giriniz");
         String myStr = scan.nextLine();
-        String[] arr = myStr.split("");
+        String[] arr = myStr.split(" ");
         int[] myArr = new int[5];
-        for(int i = 0 ; i< arr.length ; i++){
+        for (int i = 0; i < arr.length; i++) {
             int num = Integer.parseInt(arr[i]);
             myArr[i] = num;
         }
@@ -40,12 +42,12 @@ public class project {
         int[] UseThisArray1 = new int[3];
         int[] UseThisArray2 = new int[2];
 
-        for(int i = 0 ; i <3 ; i++){
+        for (int i = 0; i < 3; i++) {
             UseThisArray1[i] = myArr[i];
         }
 
-        for(int i = 3 ; i <5 ; i++){
-            UseThisArray2[i-3] = myArr[i];
+        for (int i = 3; i < 5; i++) {
+            UseThisArray2[i - 3] = myArr[i];
         }
 
 //        Code start here
@@ -56,7 +58,7 @@ public class project {
 
         boolean b1 = false;
 
-        for(int i = 0 ; i<UseThisArray2.length ; i++) {
+        for (int i = 0; i < UseThisArray2.length; i++) {
             for (int j = 0; j < UseThisArray1.length; j++) {
 
 
@@ -64,7 +66,7 @@ public class project {
                     b1 = true;
                     break;
 
-                } else if (UseThisArray1[j] != UseThisArray2[i] ) {
+                } else if (UseThisArray1[j] != UseThisArray2[i]) {
                     b1 = false;
 
                 }
@@ -72,7 +74,6 @@ public class project {
         }
 
         System.out.println(b1);
-
 
 
     }
