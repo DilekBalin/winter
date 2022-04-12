@@ -20,15 +20,24 @@ public class C05_Exception {
 
             try {
                 sayi = scan.nextInt();
+                toplam+=sayi;
             } catch (InputMismatchException e) { //bir seye yanlis basildi demektir
                 //ama o basilan sey Q mu baska bir sey mi nasil kontrol edecegiz?
+                String hataliGiris=scan.next();
+                if(hataliGiris.equalsIgnoreCase("q") ){
+
+                    break;
+
+                }else{
+                    System.out.println("hatli giris");
+                }
 
             }
 
 
 
-            toplam+=sayi;
-        } while (toplam < 500);
 
+        } while (toplam < 500);
+        System.out.println("Girdiginiz sayilarin toplami = "+toplam);
     }
 }
