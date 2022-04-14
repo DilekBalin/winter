@@ -8,9 +8,9 @@ public class C02_FileInputStream {
 
         /*
         bir kod yazilirkenn olasi exceptionlar ongorulup ona gore
-        exception olustugunda Java'nin ne yapmasi gerektig belirtilmelidir.
+        exception olustugunda Java'nin ne yapmasi gerektigı belirtilmelidir.
 
-        1 - eger exception olustugunda coduk calismaya devam etmesini istemiyorsak
+        1 - eger exception olustugunda codun calismaya devam etmesini istemiyorsak
         method isminin yanina olusabilecek exception'u declare edebiliriz
         2 -Eger exception olussa da kodun calismaya devam etmesini istiyorsak
         sorun olusturabilecek codu try catch bloguynun icine alir
