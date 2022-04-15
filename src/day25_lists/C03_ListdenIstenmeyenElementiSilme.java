@@ -10,7 +10,7 @@ public class C03_ListdenIstenmeyenElementiSilme {
         // kalanları yeni bir array olarak yazdıran bir method olusturun
 
         int arr[] = {3, 4, 2, 3, 5, 7, 3, 8, 5, 2, 4};
-        int istenmeyenEleman = 3;
+        int istenmeyenEleman = 2;
 
         //List ile yapınca uzunlugunu ve yerlestircegim elemanın indexini de kontrol etmek zorunda degilim
 

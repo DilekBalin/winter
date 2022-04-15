@@ -3,7 +3,7 @@ package day25_lists;
 import java.util.Arrays;
 import java.util.List;
 
-public class C06_ArraydenListOlusturma {
+public class   C06_ArraydenListOlusturma {
     public static void main(String[] args) {
         // verilen bir array'i listeye cevirin
         String arr[]={"A" , "B" , "C"};
@@ -16,6 +16,8 @@ public class C06_ArraydenListOlusturma {
 
 
 
+        //eger array'deki bir elemani degistiriseniz list'teki de otomatik olarak degisir
+        //tam tersi de gerceklesir
         System.out.println("19.satirda list :" + arraydenList);
         arr[1]="F";
 

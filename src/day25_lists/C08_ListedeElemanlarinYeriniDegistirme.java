@@ -3,7 +3,7 @@ package day25_lists;
 import java.util.ArrayList;
 import java.util.List;
 
-public class C08_ListedeElemanlarinYeriniDegistirme {
+public class  C08_ListedeElemanlarinYeriniDegistirme {
     public static void main(String[] args) {
         // Verilen bir listede, istenen iki index'deki elementlerin yerini
         // kalici olarak degistiren bir method olusturun

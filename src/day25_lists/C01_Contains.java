@@ -1,6 +1,7 @@
 package day25_lists;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class C01_Contains {
@@ -25,7 +26,21 @@ public class C01_Contains {
         karakterler.add("F");
         System.out.println(harfler.containsAll(karakterler)); //false
 
-        //tumu aradıgımız yerde var mi sorusunun cevabını arıyoruz
+        //containsAll() method'u ile  tumu aradıgımız yerde var mi sorusunun cevabını arıyoruz
+
+
+        //Colections.sort() method'u:
+        List<String >hayvan=new ArrayList<>();
+        hayvan.add("yilan");
+        hayvan.add("kedi");
+        hayvan.add("tavsan");
+
+        Collections.sort(hayvan);
+        System.out.println(hayvan); //[kedi, tavsan, yilan]
+
+        hayvan.clear(); //hepsini siler
+        System.out.println(hayvan); // []
+
 
          }
 }

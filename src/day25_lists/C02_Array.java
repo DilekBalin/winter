@@ -17,7 +17,7 @@ public class C02_Array {
 
     public static void istenmeyenElementiSil(int[] arr, int istenmeyenEleman) {
 
-        //1.adım:istenmeyen element say
+        //1.adım:istenmeyen element sayisini  say
         //2.Yeni array olustur
         //3.Eski array'den uygun elementleri yeniye tası
         //4.yazdır

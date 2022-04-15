@@ -14,8 +14,9 @@ public class C05_getIndex {
         sayilarList.add(2,7);  //[7, 5, 7, 3]
 
 
-        System.out.println(sayilarList.get(2)); //7  //get 'in icine index yazıyoruz ve index dondurur
-        System.out.println(sayilarList); //[7, 5, 7, 3]   //liste degismedi yani sasdece indexin yerini gosterdi ve getirdi
+        System.out.println(sayilarList.get(2)); //7  //get 'in icine index yazıyoruz ve index dondurur >>2.index'te kim var?
+        System.out.println(sayilarList); //[7, 5, 7, 3]   //liste degismedi yani sasdece indexin yerini gosterdi
+        // ve getirdi o elementi sokup alamdi
 
     }
 }

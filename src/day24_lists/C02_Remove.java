@@ -3,7 +3,7 @@ package day24_lists;
 import java.util.ArrayList;
 import java.util.List;
 
-public class C02_remove {
+public class C02_Remove {
     public static void main(String[] args) {
         List<String> isimler = new ArrayList<>();
         isimler.add("Aykut");
@@ -14,8 +14,9 @@ public class C02_remove {
 
 
         /* isimler.remove("Oguzhan");  //direkt objeyi yazarsak true ya da false doner
-        Bu sonucu kullanmak istiyorsak bunu boolean bir objeye atamalıyız
-        kullanıcıya yazdırmak istiyorsak da if ile sonucu belirtmeliyiz*/
+        Bu sonucu kullanmak istiyorsak bunu boolean bir variabl'a atamalıyız
+        kullanıcıya yazdırmak istiyorsak da if ile sonucu belirtmeliyiz
+        */
 
 
         //remove(istenenObject)methodu istenen elementi kaldırıp bize true/false doner
@@ -42,10 +43,12 @@ public class C02_remove {
                                                    //delil olarak Yusuf isminibize dondurur
 
         isimler.remove(1);
-        //bunu yazdırmak zounda degiliz
-        //yazdirsak da yazdırmasak da liste degistive 1.index'teki element silindi
+        //bunu yazdırmak zorunda degiliz
+        //yazdirsak da yazdırmasak da liste degisti ve 1.index'teki element silindi
 
         System.out.println(isimler); //[Aykut, Ilker]
+        //sayilarin oldugu bir list'te eleman silmek icin obje kullanamayiz
+        //yazdigimiz sayi index olarak kabul edilir
     }
 
 }

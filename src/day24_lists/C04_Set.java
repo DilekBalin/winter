@@ -5,6 +5,11 @@ import java.util.List;
 
 public class C04_Set {
     public static void main(String[] args) {
+        //set()method'u yazili dilinde update olarak gorulebilir
+        //set() method'u add() method'u yerine kullanilamaz  yani sona bir elemnt ekelemk icin kullanamyiz
+        //kisacasi olamayn bir index'e set yapamyiz
+        //ornegin 3 elementimiz var ve 4.elementimiz yasemin olsun diyemeyiz  cunku 4.element yok ki nasil set yapalim?
+
 
 
         List<String> isimler = new ArrayList<>();

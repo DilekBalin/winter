@@ -21,9 +21,11 @@ public class C05_ListiTekrarsizYap {
         sayilar.add(6);
         sayilar.add(1);
         sayilar.add(7);
+
         sayilar= tekrarsizListeOlustur(sayilar);  //sayılar listimin degisimini kalıcı hale gelmesini istedigim icin atama yaptım
-        //ve listemin orijinali gormek istedim
-        System.out.println(sayilar);  //bununla degismi gorebiliriz
+        //method'u sayilar'a atayinca bana return type verdi cunku degisiklik kalici olarak bize dondu
+        //bir onceki class'ta sadece yazdirdigimiz icin orijinal liste degismedi ama burda degisti
+        System.out.println(sayilar); //[1, 3, 5, 6, 7]
     }
     public static List<Integer> tekrarsizListeOlustur(List<Integer> sayilar) {
         List<Integer> tekrarsizList = new ArrayList<>();
