@@ -20,21 +20,21 @@ output: [23,40]
         List<Integer> liste = new ArrayList<>();
         liste.add(2);
         liste.add(13);
-        liste.add(56);
+        liste.add(25);
         liste.add(23);
-        liste.add(45);
+        liste.add(35);
         liste.add(14);
         liste.add(40);
 
         ListIterator itr=liste.listIterator();
         while(itr.hasNext()){
-            Object sayi=itr.next();
+            Object sayi=itr.next(); //next() ile uzerinden atladigi sayiyi ,sayi'ya atadi
 
-            if((Integer)itr.next()>20 && (Integer)itr.next()<40){
+            if((Integer)sayi>20 && (Integer)sayi<40){ //Inteegr diye casting yapmaliyiz
                 itr.remove();
             }
         }
-        System.out.println(liste);
+        System.out.println(liste); //[2, 13, 14, 40]
 
     }
 
