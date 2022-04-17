@@ -1,4 +1,4 @@
-package groupWork.mutableUmmutable;
+package groupWork.mutableUmmutableStrıngBuıider;
 
 import java.util.ArrayList;
 import java.util.List;

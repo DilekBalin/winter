@@ -14,10 +14,17 @@ public class C05_StringBuilder {
          */
 
         StringBuilder sb1=new StringBuilder("Ali Can");
-        StringBuilder sb2=new StringBuilder("Ali Ean");
+        StringBuilder sb2=new StringBuilder("Ali can");
 
         String str="Ali Can";
         System.out.println(sb1.compareTo(sb2));
        // System.out.println(sb1.compareTo(str));
+        System.out.println(sb1.equals(sb2)); //false
+        System.out.println(sb1.equals(sb1)); //true
+        // equals false verir cunku iki ayri obje gibi algiladigi icin
+        //StringBuilder'da equals methodu == gibi davranir
+
+        System.out.println(sb1.equals(str)); //false
+        //System.out.println(sb1==str);//farkli obje turleri oldugu iicn kiyas yapmaz
     }
 }

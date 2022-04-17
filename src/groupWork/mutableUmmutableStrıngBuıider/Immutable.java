@@ -1,4 +1,4 @@
-package groupWork.mutableUmmutable;
+package groupWork.mutableUmmutableStrıngBuıider;
 
 public class Immutable {
     public static void main(String[] args) {
@@ -17,7 +17,7 @@ public class Immutable {
         System.out.println(str1.equals(str3));  //
         System.out.println(str1.equals(str4));  //
 
-        System.out.println(str1==str2);  //    i
+        System.out.println(str1==str2);  //
         System.out.println(str1==str3);  //
         System.out.println(str1==str4);  //
 

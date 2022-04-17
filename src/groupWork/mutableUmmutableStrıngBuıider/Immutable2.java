@@ -1,4 +1,4 @@
-package groupWork.mutableUmmutable;
+package groupWork.mutableUmmutableStrıngBuıider;
 
 public class Immutable2 {
     public static void main(String[] args) {
