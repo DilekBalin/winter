@@ -1,4 +1,4 @@
-package groupWork.mutableUmmutableStrıngBuıider;
+package groupWork.konuOzet;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,9 +39,6 @@ public class Mutabe {
         Ayni anda bircok kisinin kullanacagi programlar icin buna ihtiyac duyulmustur
         thread safe>> guvenli es zamanli calisma
 
-        Java'd String ve tum Wrapper(Integer,Long,Double..)classlar immutable sinifindandir
-        Date,StringBuilder,StringBuffer,Arrays,ArrayList mutable class'lardir
-
   */
         //Java atama yaparken her seferinde yeni bir obje olusturuyor(immutable'lar icin)
     String str1="A";
@@ -52,6 +49,10 @@ public class Mutabe {
         System.out.println(str1);//ABC
 
 
-
+        ArrayList<Integer> values =new ArrayList<>();
+        values.add(4);
+        values.add(5);
+        values.set(1,6);
+        values.remove(0);  //sonucu gor
 
     }}

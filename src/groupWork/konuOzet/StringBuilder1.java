@@ -1,6 +1,6 @@
-package groupWork.mutableUmmutableStrıngBuıider;
+package groupWork.konuOzet;
 
-public class StringBuilder {
+public class StringBuilder1 {
     public static void main(String[] args) {
         java.lang.StringBuilder sb1= new java.lang.StringBuilder();
         java.lang.StringBuilder sb2 = new java.lang.StringBuilder("Java cok guzel");
@@ -8,7 +8,7 @@ public class StringBuilder {
 
 
         System.out.println("sb1 length : " +sb1.length());
-        System.out.println("sb1 capacity : " +sb1.capacity());  //orneklere devam et
+        System.out.println("sb1 capacity : " +sb1.capacity());  //orneklere devam et sb12 v2 sb3 e de bak
 
         //append ile ekleme yap yukaridaki gibi uzunluk ve kapasiteye bak
         //sayi ekle

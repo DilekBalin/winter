@@ -38,6 +38,13 @@ public class C03_StringBuilder {
         System.out.println("sb1 length : " +sb1.length());  //40
         System.out.println("sb1 capacity : " +sb1.capacity()); //70
 
+        StringBuilder sb =new StringBuilder();
+        sb.append("Mehmet");
+        sb.append("Hoca");
+        sb.append("Java").append("anlatir");//sonucu yazdir
+
+        sb.append("Java cok guzel",0,4); //sonuc ne olur?
+
         sb1.trimToSize();
         System.out.println("sb1 length : " +sb1.length());  //40
         System.out.println("sb1 capacity : " +sb1.capacity()); //40
