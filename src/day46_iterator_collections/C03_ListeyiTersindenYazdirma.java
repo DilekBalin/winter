@@ -19,11 +19,11 @@ public class C03_ListeyiTersindenYazdirma {
         //once iterator olusturup sona yollayalim
 
         ListIterator itr = liste.listIterator();
-        while (itr.hasNext()) {
-            itr.next();
+        while (itr.hasNext()) {  //yanda eleman var mi
+            itr.next(); //yanda eleman oldugu mudeetce bizi yandakine goturur
         }
-        while (itr.hasPrevious()) {
-            System.out.print(itr.previous() +" ");   //9 6 8 7 5
+        while (itr.hasPrevious()) {  // onceki kisimda eleman var mi?true oldugu muddetce calis
+            System.out.print(itr.previous() +" ");   //9 6 8 7 5  //sondan yazdirmaya baslar
 
         }
 
