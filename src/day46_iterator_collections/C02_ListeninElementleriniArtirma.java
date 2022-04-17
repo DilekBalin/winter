@@ -22,9 +22,19 @@ public class C02_ListeninElementleriniArtirma {
         iterator'in hasNext() ve next() methodlarini kullanacagiz
                 */
 
-        Iterator itr = liste.iterator();
-        while(itr.hasNext()){ // yaninda element oldugu muddetce calisacak
-            System.out.println(itr.next());
+       // Iterator itr = liste.iterator();
+      //  while(itr.hasNext()){ // yaninda element oldugu muddetce calisacak
+           // System.out.println(itr.next()); //bu method hem yazdiracak hem de yanindaki elemente gececek
+
+            //basa gelecek tum elementlere bitene kadar
+            //Biz bu ornekte sadece elementlerin uzerinde gezinebildik herhangi bir ekleme cikarma yapamayiz
+            //cunku iterator'de set() methodu yoktur
+
+        ListIterator itr = liste.listIterator();
+        while(itr.hasNext()){
+            Object sayi= itr.next();//hem siradaki sayiya gidecek hem de onu sayi'ya atayacak
+            itr.set((Integer)sayi+3); //integer casting yaptik
         }
+        System.out.println(liste);  //[8, 10, 11, 9, 12]
     }
 }
