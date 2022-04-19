@@ -15,10 +15,10 @@ public class C01_linkedList {
         Deque/Queue secersek: Dequ'daki method'ari kullanabiliriz
          */
         LinkedList<Integer> ll1= new LinkedList<>();
-        ll1.add(10);  //once Linkedlist classindan calistirir
+        ll1.add(10);  // Linkedlist classindan calistirir
 
 
-        //Sadecee List interface'nden ozellikler kullanmak istersek
+        //Sadecee List interface'nden gelen ozelliklerı kullanmak istersek
         //data turunu List yapariz
         List<Integer> ll2=new LinkedList<>();
         ll2.add(10);
@@ -30,7 +30,7 @@ public class C01_linkedList {
         ll3.addFirst(15);
         System.out.println(ll3);//[15, 20]
         ll3.addLast(40);
-        System.out.println(ll3);//[15, 40]
+        System.out.println(ll3);//[15,20, 40]
 
     }
 }
