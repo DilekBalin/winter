@@ -11,10 +11,10 @@ public class C01_Set{
         arrayiTekrarsizYazdir(arr);
     }
     private static void arrayiTekrarsizYazdir(Integer[] arr) {
-        Set<Integer> tekrarsizElementKumesi= new HashSet<>();
+        Set<Integer> tekrarsizElementKumesi= new HashSet<>(); //array'in elementlerini teker teker alip set'e atmaliyiz
         for (Integer each : arr
-        ) {
-            tekrarsizElementKumesi.add(each);
+        ) {  //array'deki tum integerler'i alacagiz
+            tekrarsizElementKumesi.add(each);  //tekrarsizElementKumesi'ne bu each'i atayacagizz
         }
         System.out.println(tekrarsizElementKumesi);
     }

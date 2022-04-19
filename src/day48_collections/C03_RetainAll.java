@@ -4,6 +4,11 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class C03_RetainAll {
+
+    //Queue icin ayirici ozellik: elemanlar en sona eklenir ve en bastan silinir
+    //Deque elemanlar hem onden hem sondan ekleme yapilabilir
+    //deque null kabul etmez
+
     public static void main(String[] args) {
 
         Set<Integer> set1=new HashSet<>();
