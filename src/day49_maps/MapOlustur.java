@@ -10,12 +10,12 @@ public class MapOlustur {
         //Bir tane Map dondursun diye Map<Integer,String>
 
 
-        Map<Integer,String> sinifList=new HashMap<>();
-        sinifList.put(101,"Ali,Can,Dev");
-        sinifList.put(102,"Veli,Yan,QA");
-        sinifList.put(103,"Ali, Yan,C++");
-        return sinifList;
 
+            Map<Integer,String> sinifList = new HashMap<>();
+            sinifList.put(101,"Ali, Can, Dev");
+            sinifList.put(102,"Veli, Yan, QA");
+            sinifList.put(103,"Ali, Yan, C#");
+            return sinifList;
 
     }
 }
