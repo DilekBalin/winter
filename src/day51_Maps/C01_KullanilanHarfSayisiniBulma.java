@@ -1,0 +1,37 @@
+package day51_Maps;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class C01_KullanilanHarfSayisiniBulma {
+    public static void main(String[] args) {
+        /*
+      Soru 1 ) Verilen bir String’deki harfleri ve harflerin kacar kez kullanildigini return eden bir method yaziniz
+      Ornek : Input : Hellooo
+       output : H=1, e=1, l=2, o=3
+
+         */
+
+
+        String input = "Hellooooooooo";
+        String harflerArr[] = input.split("");  //string'lerden olusan bir array olusturduk ve harf harf ayirdik
+        Map<String, Integer> kullanimSayilari = new HashMap<>(); // key'lerimin string,value'larimin integer oldugu bir Map olusturdum
+        //harfler key olacak,kac kez kullanildi kismi value olacak cunku burasi degisken
+        for (String each : harflerArr   //for each bana array'in icindeki elementleri yanistring'leri getircek,
+           // nerden getircek>>harflerArray'inden getirecek
+        ) {
+
+            //Map'teki elementleri incelersek aradigimiz harf varsa if body'si yoksa else body'si calisacak
+            if (kullanimSayilari.containsKey(each)) { //Map'im key dedigim ve parcalara ayirdigim harfleri iceriyorsa
+                kullanimSayilari.put(each, kullanimSayilari.get(each) + 1);//ornegin l harfi var ve l=1 der once
+                // sonra da key olarak iki tane l olamayacagi icin eski l'yi oldurur ve yenisini atar 1 artirir  >>>l=2 olur
+            } else {  //aradigim element map'te yoksa buraya gec
+                kullanimSayilari.put(each, 1);//ornegin h=1 olacak,eact'ten sonra esittri kendisis koyuyor
+            }
+        }
+        System.out.println(kullanimSayilari);
+    }
+
+
+}
+
