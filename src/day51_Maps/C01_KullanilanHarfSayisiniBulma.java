@@ -18,7 +18,7 @@ public class C01_KullanilanHarfSayisiniBulma {
         Map<String, Integer> kullanimSayilari = new HashMap<>(); // key'lerimin string,value'larimin integer oldugu bir Map olusturdum
         //harfler key olacak,kac kez kullanildi kismi value olacak cunku burasi degisken
         for (String each : harflerArr   //for each bana array'in icindeki elementleri yanistring'leri getircek,
-           // nerden getircek>>harflerArray'inden getirecek
+            // nerden getircek>>harflerArray'inden getirecek
         ) {
 
             //Map'teki elementleri incelersek aradigimiz harf varsa if body'si yoksa else body'si calisacak
@@ -27,11 +27,17 @@ public class C01_KullanilanHarfSayisiniBulma {
                 // sonra da key olarak iki tane l olamayacagi icin eski l'yi oldurur ve yenisini atar 1 artirir  >>>l=2 olur
             } else {  //aradigim element map'te yoksa buraya gec
                 kullanimSayilari.put(each, 1);//ornegin h=1 olacak,eact'ten sonra esittri kendisis koyuyor
+
+                if (kullanimSayilari.containsKey(each)) { //Map'im key dedigim ve parcalara ayirdigim harfleri iceriyorsa
+                    kullanimSayilari.put(each, kullanimSayilari.get(each) + 1);//map'e element koy,each(gelen her bir harf)
+                    //eski degerimi bana getir ve bir artir>>ornegin H harfini once getirdi sonra bir artirdi
+                } else {  //aradigim element map'te yoksa buraya gec
+                    kullanimSayilari.put(each, 1);//o harf bir tane olmus olacak
+                }
             }
+            System.out.println(kullanimSayilari);
         }
-        System.out.println(kullanimSayilari);
-    }
 
 
-}
+    }}
 
